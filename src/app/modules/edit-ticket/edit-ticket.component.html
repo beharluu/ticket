@@ -1,1 +1,28 @@
-<p>edit-ticket works!</p>
+<div class="edit-ticket">
+
+    <div class="container">
+      <h5 class="title">Mega Electronix</h5>
+      <span class="description">Edit task</span>
+    </div>
+
+    <div class="line-break"></div>
+
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }"   routerLinkActive="active">
+          <a routerLink="./details" class="nav-link">Details</a>
+        </li>
+        <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }"   routerLinkActive="active">
+            <a routerLink="./activity" class="nav-link">Activity</a>
+        </li>
+        <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }"   routerLinkActive="active">
+          <a routerLink="./comments" class="nav-link">Comments</a>
+        </li>
+        <li class="nav-item" [routerLinkActiveOptions]="{ exact: true }"   routerLinkActive="active">
+          <a routerLink="./attachments" class="nav-link">Attachments</a>
+        </li>
+      </ul>
+    </div>
+    <div class="line-break"></div>
+    <router-outlet></router-outlet>
+</div>

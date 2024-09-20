@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '', component: HomeComponent,
     children: [
-        { path: '', redirectTo: 'ticket', pathMatch: 'full' },
+        {   path: '', redirectTo: 'ticket', pathMatch: 'full' },
         {
           path: 'ticket', loadChildren: () => import('./modules/edit-ticket/edit-ticket.module').then(x => x.EditTicketModule)
         }

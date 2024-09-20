@@ -1,0 +1,49 @@
+.edit-ticket{
+    width: 100%;
+    margin: 10px 0;
+
+    .line-break{
+        width: 100%;
+        height: 1.5px;
+        background-color: rgb(230, 235, 240);
+        margin: 16px 0;
+    }
+
+    .container{
+
+        .title{
+            color: #2F3059;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    
+        .description{
+            color: #687196;
+            font-size: 16px;
+        }
+    
+        .nav {
+            gap: 8px;
+        
+            .nav-item{
+                background-color: #F1F3F8;
+                border-radius: 5px;
+        
+                .nav-link{
+                    color: #687196;
+                    font-size: 13px;
+                    padding: 4px 8px 5px 8px;
+                }
+            }
+    
+            .active{
+                background-color: rgba(62, 64, 219, 0.1);
+    
+                .nav-link {
+                    color: #3E40DB;
+                }
+            }
+        }
+    }
+}
+
