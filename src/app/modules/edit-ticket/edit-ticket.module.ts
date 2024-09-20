@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { EditTicketRoutingModule } from './edit-ticket-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
 import { EditTicketComponent } from './edit-ticket.component';
 import { DetailsComponent } from './details/details.component';
 import { ActivityComponent } from './activity/activity.component';
@@ -19,7 +20,8 @@ import { AttachmentsComponent } from './attachments/attachments.component';
   ],
   imports: [
     CommonModule,
-    EditTicketRoutingModule
+    EditTicketRoutingModule,
+    SharedModule
   ]
 })
 export class EditTicketModule { }
