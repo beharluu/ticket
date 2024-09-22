@@ -1,1 +1,14 @@
-<p>details works!</p>
+<div class="details">
+    <div class="container">
+
+        <div class="top">
+            <app-icon name="icon-logicpilot"></app-icon>
+            <span>Ask Logic Pilot to generate substask or to summarize comments</span>
+        </div>
+
+        <app-details-main [data]="ticket"></app-details-main>
+    </div>
+
+    <app-subtask-list [data]="subTasks"></app-subtask-list>
+
+</div>

@@ -1,0 +1,37 @@
+<div class="subtask-list">
+    <div class="container">
+        <div class="top">
+            <h5>Subtasks</h5>
+            <div class="progress" role="progressbar" aria-label="Basic example" 
+                [attr.aria-valuenow]="taskPercentage" 
+                aria-valuemin="0" 
+                aria-valuemax="100">
+                <div class="progress-bar" [style.width]="taskPercentage + '%'"></div>
+            </div>
+            <span class="stats">{{ taskChecked }}/{{ tasks.controls.length }}</span>
+        </div>
+    </div>
+    <div class="line-break"></div>
+
+    <div class="container">
+        <ul class="list-group">
+            <li class="list-group-item label">Subtask name</li>
+            
+            <form [formGroup]="tasksForm" (ngSubmit)="submitTasks()">
+                <div formArrayName="tasks">
+                    <li class="list-group-item" *ngFor="let task of tasks.controls; let i = index" [formGroupName]="i">
+                      <div class="checkmark" (click)="changeCheckStatus(i)">
+                        <app-icon name="icon-checkmark" *ngIf="task.get('checked')?.value"></app-icon>
+                      </div>
+                      <input class="title" #taskInput formControlName="name" placeholder="Enter task name" />
+                    </li>
+                </div>
+                <li class="list-group-item add-new" (click)="addTask()">
+                    <app-icon name="icon-zoomIn"></app-icon>
+                    <div class="title">Add subtask</div>
+                </li>
+            </form>
+          
+          </ul>
+    </div>
+</div>
