@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from './ticket';","map":{"version":3,"mappings":"AAAA,cAAc,UAAU","names":[],"sourceRoot":"","sources":["/Users/beharlushaku/Desktop/Angular Projects/ticket/src/app/models/index.ts"],"sourcesContent":["export * from './ticket';"]},"metadata":{},"sourceType":"module","externalDependencies":[]}
