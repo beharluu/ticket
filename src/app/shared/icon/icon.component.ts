@@ -9,7 +9,7 @@ export class IconComponent implements OnInit {
 
   @Input('name') name: any;  //This parameter here is the file name from assets/icons;
 
-  directory: String = '../../../assets/icons/';
+  directory: String = 'assets/icons/';
 
   ngOnInit() { 
     if(this.name) this.directory = this.directory+this.name+'.svg';
